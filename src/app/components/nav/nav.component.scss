@@ -1,0 +1,29 @@
+div {
+  border-bottom: 2px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    li {
+      font-size: 1.5em;
+      margin: 0 2em;
+      a {
+        text-decoration: none;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.active {
+  background-color: #ffaf04;
+  padding: 0.5em 1em;
+  border-radius: 1.1em;
+  color: white !important;
+}

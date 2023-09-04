@@ -1,0 +1,20 @@
+<h2>{{ testo }}</h2>
+<ul>
+  <li *ngFor="let todo of todos">
+    {{ todo.title }}
+    <i class="fas fa-trash-alt" (click)="remove(todo)"></i>
+  </li>
+</ul>
+<div *ngIf="!todos.length && testo === ''" class="container">
+  <div>
+    <div>
+      <i class="fas fa-cloud" style="--i: 0"></i>
+      <i class="fas fa-cloud" style="--i: 1"></i>
+      <i class="fas fa-cloud" style="--i: 2"></i>
+      <i class="fas fa-cloud" style="--i: 3"></i>
+    </div>
+    <span>
+      <i></i>
+    </span>
+  </div>
+</div>
